@@ -6,21 +6,31 @@ import chess.ChessPiece;
 import chess.Color;
 
 public class Pawn extends ChessPiece {
+    public Pawn(Board board, Color color) {
+        super(board, color);
+    }
+
     @Override
     public boolean[][] possibleMoves() {
         boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()];
         Position p = new Position(0, 0);
 
-        p.setValues(position.getRow() - 1, position.getColumn());
-        if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
+        if (getColor() == Color.WHITE) {
+            p.setValues(position.getRow() - 1, position.getColumn());
+            if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
+                mat[p.getRow()][p.getColumn()] = true;
+            }
+        } else {
+            p.setValues(position.getRow() + 1, position.getColumn());
+            if (getBoard().positionExists(p) && !getBoard().thereIsAPiece(p)) {
+                mat[p.getRow()][p.getColumn()] = true;
+            }
+        }
+        if (getBoard().positionExists(p) && isThereOpppentPiece(p)) {
             mat[p.getRow()][p.getColumn()] = true;
         }
 
         return mat;
-    }
-
-    public Pawn(Board board, Color color) {
-        super(board, color);
     }
 
     @Override
