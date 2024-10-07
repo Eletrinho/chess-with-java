@@ -77,7 +77,6 @@ public class ChessMatch {
             placeNewPiece((char) ('a' + i), 7, new Pawn(board, Color.BLACK));
         }
 
-        placeNewPiece('d', 4, new King(board, Color.WHITE));
 
         placeNewPiece('a', 1, new Rook(board, Color.WHITE));
         placeNewPiece('b', 1, new Knight(board, Color.WHITE));
