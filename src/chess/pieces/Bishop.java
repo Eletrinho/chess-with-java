@@ -5,6 +5,10 @@ import chess.ChessPiece;
 import chess.Color;
 
 public class Bishop extends ChessPiece {
+    @Override
+    public boolean[][] possibleMoves() {
+        return new boolean[0][];
+    }
 
     public Bishop(Board board, Color color) {
         super(board, color);
