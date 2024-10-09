@@ -17,6 +17,6 @@ public class Queen extends ChessPiece {
 
     @Override
     public boolean[][] possibleMoves() {
-        return new boolean[0][];
+        return new boolean[getBoard().getRows()][getBoard().getColumns()];
     }
 }

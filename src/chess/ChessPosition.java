@@ -3,8 +3,8 @@ package chess;
 import boardgame.Position;
 
 public class ChessPosition {
-    private final char column;
-    private final int row;
+    private char column;
+    private int row;
 
     public ChessPosition(char column, int row) {
         if (column < 'a' || column > 'h' || row < 1 || row > 8) {
@@ -15,7 +15,7 @@ public class ChessPosition {
     }
 
     protected static ChessPosition fromPosition(Position position) {
-        return new ChessPosition((char) ('a' - position.getColumn()), 8 - position.getRow());
+        return new ChessPosition((char) ('a' + position.getColumn()), 8 - position.getRow());
     }
 
     public char getColumn() {
