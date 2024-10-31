@@ -17,7 +17,7 @@ Este projeto é uma implementação baseada em console de um jogo de xadrez usan
 
 1. **Compilar e executar**: Compile e execute o arquivo `Program.java`.
 2. **Inserir movimentos**: O jogo solicitará que o jogador atual insira seu movimento.
-3. **Formato do movimento**: Insira os movimentos usando o seguinte formato: `posição_origem posição_destino`. Por exemplo, para mover o peão de E2 para E4, insira `e2 e4`.
+3. **Formato do movimento**: Insira os movimentos usando o seguinte formato: `posição_origem posição_destino`. Por exemplo, para mover o peão de E2 para E4, insira `e2` depois `e4`.
 4. **Progresso do jogo**: O jogo exibirá o tabuleiro atualizado após cada movimento.
 5. **Fim do jogo**: O jogo termina quando ocorre um xeque-mate ou empate.
 
