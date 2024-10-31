@@ -32,7 +32,7 @@ O projeto está estruturado nos seguintes pacotes:
 ## Melhorias Futuras
 
 - **Oponente IA**: Implementar um oponente IA para jogar contra.
-- **Salvar e carregar jogos**: Permitir que os jogadores salvem e carreguem seus jogos.
+- **~~Salvar~~ e carregar jogos**: ~~Permitir que os jogadores salvem~~ e carreguem seus jogos.
 - **Histórico de movimentos**: Exibir um histórico dos movimentos feitos durante o jogo.
 
 ## Contribuindo
