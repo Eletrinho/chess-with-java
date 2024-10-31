@@ -12,6 +12,7 @@ Este projeto é uma implementação baseada em console de um jogo de xadrez usan
   - Promoção de peões.
 - **Interface de console**: O jogo é jogado no console, com uma interface simples e intuitiva.
 - **Tratamento de erros**: O jogo lida com entradas inválidas e movimentos ilegais, fornecendo mensagens de erro claras.
+- **Sistema de logging**: Ao final da partida é gerado um arquivo `.csv` com o histórico de movimentos feitos.
 
 ## Como Jogar
 
